@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e6e6e6;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 1rem;
+  font-size: larger;
+}
+
+$clr-black: #6e6e6e;
+h1 {
+  font-size: 10em;
+}
+.button-wrapper {
+  display: flex;
+  gap: 1rem;
+  font-size: inherit;
+  button {
+    font-size: 2em;
+    border-radius: 50%;
+    width: 2em;
+    aspect-ratio: 1;
+    border: 1px solid $clr-black;
+    background-color: white;
+    box-shadow: 4px 4px 10px transparentize($clr-black, 0.8);
+    cursor: pointer;
+  }
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: inherit;
+
+  label {
+    font-size: 1.5em;
+  }
+  input {
+    padding: 0.5rem 1rem;
+    border-radius: 0.4em;
+    background-color: white;
+    border: 2px solid $clr-black;
+    font-size: inherit;
+  }
+
+  button {
+    background-color: white;
+    border: 2px solid $clr-black;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 0.4em;
+    font-size: inherit;
+  }
+}
+
+.positive {
+  color: green !important;
+}
+.negative {
+  color: red !important;
+}
